@@ -1,0 +1,33 @@
+.edit-book {
+    border-radius: 5px;
+    padding: 15px 10px;
+    border: 2px solid #c6c6c6;
+}
+form, .left-block, .right-block {
+    display: flex;
+    flex-wrap: wrap;
+}
+form .left-block, form .right-block {width: 50%;}
+form .btn-block {width: 100%; text-align: center;}
+.left-block label {width: 30%; text-align: right; padding: 0 5px; line-height: 25px;}
+.left-block input {width: 65%; height: 25px;}
+.right-block label {width: 30%; text-align: right; padding: 0 5px; line-height: 25px;}
+.right-block textarea {width: 65%;}
+.btn-block button {
+    padding: 5px 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: all 1s;
+}
+.btn-block button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.btn-block button:first-child {
+background-color: #44cfdb;
+}
+.btn-block button:last-child {
+    background-color: #eda83f;
+    }

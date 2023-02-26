@@ -1,0 +1,54 @@
+.modal {
+    z-index: 999; 
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;   
+}
+.modal hr {width: 100%;}
+.modal h2 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
+.modal .block-left, .modal .block-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.modal .block-right {
+    width: 70%;}
+.modal .block-left {
+    padding-right: 10px;
+    width: 30%;
+}
+.modal .block-left p {
+    width: 100%;
+}
+.modal .block-left div {
+    width: 100%;
+}
+.modal .block-right p {
+    margin: 5px 0;
+}
+.content {
+    
+    height: 120px;
+    overflow-y: scroll;
+}
+.reviewer {
+    overflow-y: scroll;
+    height: 240px;
+}
+.reviewer ul {
+    padding: 0;
+    margin-top: -8px;
+}
+.reviewer li {
+    padding: 0 5px;
+}

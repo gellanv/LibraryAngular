@@ -1,0 +1,12 @@
+<div class="booklist">
+    <ul class="tab-booklist">
+        <li (click)="getAll()">All</li><li (click)="getRecommend()">Recommended</li>
+    </ul>    
+    <div class="list">                  
+        <ul>
+            <li *ngFor="let item of books$ | async">           
+                <app-book-list-item [bookpreview]=item></app-book-list-item>
+            </li>                                 
+        </ul>                        
+    </div>
+</div>

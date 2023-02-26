@@ -1,0 +1,29 @@
+ul {
+    list-style-type: none;
+}
+.tab-booklist {
+    margin-bottom: -16px;
+}
+.tab-booklist li {
+    border: 2px solid #c6c6c6;
+    display: inline-block;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+}
+.tab-booklist li:hover {
+    cursor: pointer;
+    background-color: #44cfdb;
+}
+.list ul {
+    border: 2px solid #c6c6c6;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;   
+    padding: 0; 
+    height: 262px;
+}
+.list li {
+    width: 50%;
+    padding: 7px;
+}

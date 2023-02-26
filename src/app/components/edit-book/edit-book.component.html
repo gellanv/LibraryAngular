@@ -1,0 +1,25 @@
+<div class="edit-book" >
+    <h2>{{textAction}}</h2>
+    <hr>
+    <form #myForm="ngForm">
+        <div class="left-block">
+            <input type="hidden" [(ngModel)]="curentBook.id" name="id">            
+            <label>Title</label>
+            <input type="text" [(ngModel)]="curentBook.title" name="title">
+            <label for="files">Cover</label>
+            <input type="file" id="files" (change)="onFileChanges($event)" (ngModel)="curentBook.cover" name="cover">
+            <label>Genre</label>                
+            <input type="text" [(ngModel)]="curentBook.genre" name="genre">
+            <label>Author</label>                
+            <input type="text" [(ngModel)]="curentBook.author" name="author"> 
+        </div>
+        <div class="right-block">
+            <label>Content</label>               
+            <textarea rows="9" [(ngModel)]="curentBook.content" name="content"></textarea>
+        </div>
+        <div class="btn-block">
+            <button (click)="addBook(myForm)">{{textButton}}</button>
+            <button (click)="clearForm(myForm)">Clear</button>
+        </div>
+    </form>      
+</div>
